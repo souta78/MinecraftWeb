@@ -1,25 +1,24 @@
-// Mendapatkan jumlah pemain Minecraft dari mcapi.us
-fetch('https://mcapi.us/server/status?ip=alwination.id') // Ganti dengan IP server Minecraft Anda
+
+fetch('https://mcapi.us/server/status?ip=alwination.id') 
   .then(response => response.json())
   .then(data => {
     if (data.online) {
-      document.getElementById('player-count').textContent = `${data.players.now} players online`;  // Menampilkan jumlah pemain online
-    } else {
-      document.getElementById('player-count').textContent = 'Server Offline';  // Jika server offline
+      document.getElementById('player-count').textContent = `${data.players.now} players online`;  
+      document.getElementById('player-count').textContent = 'Server Offline';  
     }
   })
   .catch(error => console.error('Error fetching Minecraft player count:', error));
 
-// Mendapatkan jumlah anggota Discord menggunakan API Discord
+
 fetch('https://discord.com/api/v9/guilds/your-guild-id/member-count', {
   method: 'GET',
   headers: {
-    'Authorization': 'Bot YOUR_BOT_TOKEN'  // Ganti dengan token bot Discord Anda
+    'Authorization': 'Bot YOUR_BOT_TOKEN'  
   }
 })
   .then(response => response.json())
   .then(data => {
-    document.getElementById('discord-count').textContent = `${data.member_count} members`;  // Menampilkan jumlah anggota Discord
+    document.getElementById('discord-count').textContent = `${data.member_count} members`;  
   })
   .catch(error => console.error('Error fetching Discord member count:', error));
 
