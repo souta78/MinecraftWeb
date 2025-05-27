@@ -15,7 +15,7 @@ html, body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Pastikan container mengisi seluruh tinggi layar */
+  min-height: 100vh; 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #0f0f0f),
               url('https://i.pinimg.com/originals/40/01/14/400114aa763dcdff9aad8cf0d7194ba7.gif') no-repeat center center fixed;
   background-size: cover;
@@ -30,7 +30,7 @@ html, body {
   
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #0f0f0f),
               url('https://i.pinimg.com/originals/b4/54/c4/b454c431705783458cbae373d3ee0423.gif') no-repeat center center fixed;
-  background-size: cover;  /* Memastikan background tidak mengalami zoom */
+  background-size: cover;  
   color: #e0e0e0;
 }
 
@@ -38,7 +38,7 @@ html, body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Pastikan container mengisi seluruh tinggi layar */
+  min-height: 100vh; 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #0f0f0f),
               url('https://i.pinimg.com/originals/b6/f1/b5/b6f1b544cf177662009287d58fa4cd9a.gif') no-repeat center center fixed;
   background-size: cover;
@@ -54,16 +54,16 @@ html, body {
   flex-direction: column;
 }
 
-/* Menghapus outline dan border default pada link */
+
 .navbar {
   
   display: flex;
-  justify-content: center;  /* Menjaga elemen di tengah */
-  gap: 30px;                /* Menambahkan spasi antar elemen */
+  justify-content: center;  
+  gap: 30px;                
   padding: 20px 0 0;
   font-size: 15px;
-  width: 100%;              /* Pastikan navbar mengambil lebar penuh */
-  text-align: center;       /* Menjaga konten agar tetap terpusat */
+  width: 100%;              
+  text-align: center;       
 }
 
 .navbar a {
@@ -76,7 +76,7 @@ html, body {
   line-height: 4;
   outline: none;
   border: none;
-  padding: 0 10px; /* Menambahkan sedikit padding pada setiap link */
+  padding: 0 10px; 
 }
 
 .navbar a:hover {
@@ -119,7 +119,7 @@ main {
   font-size: 15px;
   color: #ffffff;
   font-weight: 500;
-  flex-direction: column; /* Agar teks berada di bawah ikon */
+  flex-direction: column; 
 }
 
 .logo-box {
@@ -158,13 +158,13 @@ main {
 
 .online-players,
 .discord-members {
-  font-size: 14px;  /* Ukuran teks sedikit lebih kecil */
-  color: #ffcc00;   /* Warna teks kuning cerah */
+  font-size: 14px;  
+  color: #ffcc00;   
   font-weight: 400;
-  margin-top: 5px;  /* Sedikit jarak dari elemen sebelumnya */
+  margin-top: 5px;  
 }
 
-/* Responsif untuk tampilan kecil seperti perangkat mobile */
+
 @media (max-width: 768px) {
   .welcome-container {
     flex-direction: column;
@@ -176,12 +176,12 @@ main {
   }
 
   .logo-box img {
-    width: 200px;  /* Menyesuaikan ukuran logo agar lebih kecil di perangkat mobile */
+    width: 200px;  
   }
 
   .online-players,
   .discord-members {
-    font-size: 12px; /* Ukuran teks lebih kecil di perangkat mobile */
+    font-size: 12px; 
   }
 }
 
@@ -277,9 +277,9 @@ main {
   text-align: center;
   margin: 20px;
   padding: 20px;
-  background-color: #111;  /* Warna background agar box terpisah jelas */
-  border-radius: 10px; /* Border radius agar kotak tampak lebih rapi */
-  width: 250px; /* Tentukan lebar box setiap staff member */
+  background-color: #111;  
+  border-radius: 10px; 
+  width: 250px;
 }
 
 .staff-member img {
@@ -287,7 +287,7 @@ main {
   height: 120px;
   object-fit: cover;
   margin-bottom: 10px;
-  border-radius: 0;  /* Menghapus border-radius agar gambar berbentuk kotak */
+  border-radius: 0; 
 }
 
 .staff-member .role {
@@ -316,7 +316,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; /* Memberikan jarak antara avatar dan tombol */
+  margin-top: 20px;
 }
 
 .vote-button {
@@ -330,18 +330,18 @@ main {
   transition: background-color 0.3s ease;
 }
 
-/* Gaya untuk logo di bawah vote-box */
+
 .vote-logo {
-  margin-top: 20px; /* Memberikan jarak antara logo dan konten di atasnya */
+  margin-top: 20px; 
   display: flex;
   justify-content: center;
 }
 
-.vote-logo .logo { /* Sesuaikan ukuran logo */
-  height: auto; /* Ukuran maksimum untuk logo */
+.vote-logo .logo {
+  height: auto; 
 }
 
-/* Tombol buka Staff Panel */
+
 #toggleStaffModal {
   background-color: #111;
   color: white;
@@ -351,7 +351,7 @@ main {
   border-radius: 8px;
   cursor: pointer;
   margin: 30px auto;
-  display: none; /* default disembunyikan */
+  display: none; 
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease, transform 0.2s;
@@ -362,9 +362,9 @@ main {
   transform: scale(1.03);
 }
 
-/* Modal Overlay */
+
 .modal {
-  display: none; /* ✅ hanya ditampilkan via JS */
+  display: none; 
 
   position: fixed;
   z-index: 999;
@@ -380,7 +380,7 @@ main {
   box-sizing: border-box;
 }
 
-/* Modal Content Fix Width */
+
 .modal-content {
   width: 90%;
   max-width: 420px;
@@ -396,7 +396,7 @@ main {
   position: relative;
 }
 
-/* Judul Modal */
+
 .modal-content h2 {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
@@ -405,14 +405,14 @@ main {
   color: #dbdbdb;
 }
 
-/* Subjudul Form */
+
 .modal-content h3 {
   margin-top: 10px;
   font-size: 15px;
   color: #ffcc00;
 }
 
-/* Input Field */
+
 .modal-content input {
   width: 100%;
   padding: 10px;
@@ -429,7 +429,7 @@ main {
   box-shadow: 0 0 5px #68686860;
 }
 
-/* Tombol Tambah/Hapus */
+
 .modal-content button {
   width: 100%;
   padding: 10px;
@@ -464,7 +464,7 @@ main {
   background-color: #cacaca;
 }
 
-/* Tombol close (X) */
+
 .close {
   position: absolute;
   top: 12px;
@@ -479,7 +479,7 @@ main {
   transform: scale(1.2);
 }
 
-/* STORE BROO EHEK */
+
 
 .store-grid {
   display: grid;
@@ -534,13 +534,13 @@ main {
   transition: background-color 0.3s ease;
 }
 
-/*STORE */
+
 .modal-username {
   position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Bisa disesuaikan transparansinya */
+  background-color: rgba(0, 0, 0, 0.8); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -586,7 +586,7 @@ main {
 #mcUserInfoWrapper {
   width: 100%;
   display: flex;
-  justify-content: center;   /* ✅ Biar posisinya tengah */
+  justify-content: center;   
   padding: 10px 0 20px;
 }
 
