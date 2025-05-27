@@ -18,9 +18,8 @@ A static website for a Minecraft server built using pure HTML, CSS, and JavaScri
 
 ## 🔗 Live Demo
 
-👉 [Click here to visit the site](https://yourusername.github.io/MinecraftWeb/)
+👉 [Click here to visit the site](https://souta78.github.io/MinecraftWeb/)
 
-> Replace `yourusername` with your actual GitHub username.
 
-## 📁 Folder Structure
+
 
