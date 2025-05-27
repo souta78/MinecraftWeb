@@ -1,4 +1,4 @@
-# 🌍 MinecraftWeb
+# 🌍 MinecraftServerWeb
 
 A static website for a Minecraft server built using pure HTML, CSS, and JavaScript. Includes server info, image gallery, and links to your community — all running right in the browser!
 
